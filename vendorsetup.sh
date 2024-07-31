@@ -1,0 +1,3 @@
+add_lunch_combo millet3g-user
+add_lunch_combo millet3g-userdebug
+add_lunch_combo millet3g-eng
