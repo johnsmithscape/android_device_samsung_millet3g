@@ -32,6 +32,11 @@ audio.primary.default \
 audio.r_submix.default \
 audio.usb.default
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
+    $(LOCAL_PATH)/configs/mixer_paths.conf:system/etc/mixer_patch.conf
+
 # Camera
 PRODUCT_PACKAGES += \
 Gallery2
@@ -47,3 +52,14 @@ wpa_supplicant \
 dhcpcd.conf \
 p2p_supplicant_marlin_inc.conf \
 libnetcmdiface 
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    make_ext4fs \
+    e2fsck \
+    setup_fs
+
+# Keylayouts
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
