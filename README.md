@@ -56,7 +56,9 @@
 `sudo dpkg -i oracle-java7-jdk_7u80_amd64.deb`
 ##### Apache Maven 2
 `wget https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip`
+
 `unzip apache-maven-2.2.1-bin.zip` 
+
 `sudo cp -r apache-maven-2.2.1 /usr/local/`
 ##### Set M2_HOME and JAVA_HOME in .bashrc
 `nano .bashrc`
