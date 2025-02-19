@@ -20,7 +20,7 @@ TARGET_OTA_ASSERT_DEVICE := millet3g,millet3gxx
 DEVICE_PATH := device/samsung/millet3g
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := millet3g_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := millet3g_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
