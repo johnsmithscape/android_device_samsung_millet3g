@@ -41,7 +41,7 @@ vendor/lib/libbtnv.so
 #vendor/lib/liboi_sbc_decoder.so
 
 # Camera
--vendor/lib/libmm-abl.so
+vendor/lib/libmm-abl.so
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8226.so
 lib/libmmcamera_cac.so
@@ -290,7 +290,7 @@ vendor/lib/libthermalioctl.so
 # Time services
 #-app/TimeService/TimeService.apk
 bin/time_daemon
--vendor/lib/libtime_genoff.so
+vendor/lib/libtime_genoff.so
 #vendor/lib/libTimeService.so
 
 # WFD
