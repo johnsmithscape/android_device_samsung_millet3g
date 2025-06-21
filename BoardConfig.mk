@@ -41,11 +41,12 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 
 # Kernel
 TARGET_PREBUILD_KERNEL := device/samsung/millet3g/kernel
-BOARD_KERNEL_CMDLINE := boot.img-cmdline
-BOARD_KERNEL_BASE := boot.img-base
-BOARD_KERNEL_PAGESIZE := boot.img-pagesize
-BOARD_MKBOOTIMG_ARGS := --kernel_offset boot.img-kernel_offset --ramdisk_offset boot.img-ramdisk_offset --tags_offset boot.img-tags_offset
-TARGET_NO_KERNEL := true
+BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 2048
+#BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
+#TARGET_NO_KERNEL := true
 
 # Partitions
 
@@ -88,7 +89,7 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(SUB_DEVICE_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/millet3g/bluetooth
 
 # Charger
 BOARD_BATTERY_DEVICE_NAME := "battery"
