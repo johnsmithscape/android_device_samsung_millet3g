@@ -40,13 +40,13 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 
 # Kernel
-TARGET_PREBUILD_KERNEL := device/samsung/millet3g/kernel
-BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 2048
+#TARGET_PREBUILD_KERNEL := device/samsung/millet3g/kernel
+#BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23
+#BOARD_KERNEL_BASE := 0x00000000
+#BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
-#TARGET_NO_KERNEL := true
+#BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
+TARGET_NO_KERNEL := true
 
 # Partitions
 
