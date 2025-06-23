@@ -51,4 +51,4 @@ fi
 #DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf /root/cm-12.1/vendor/samsung/millet3g/proprietary/*
 extract proprietary-files.txt /root/cm-12.1/vendor/samsung/millet3g/proprietary
-#./setup-makefiles.sh
+./setup-makefiles.sh
