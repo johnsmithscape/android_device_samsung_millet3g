@@ -16,8 +16,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from millet3g device
-$(call inherit-product, device/samsung/millet3g/millet3g.mk)
-$(call inherit-product, device/samsung/millet3g/vendor.mk)
+$(call inherit-product, device/samsung/millet3g/device.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_millet3gxx
 PRODUCT_DEVICE := millet3g

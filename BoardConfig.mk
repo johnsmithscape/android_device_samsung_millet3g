@@ -87,8 +87,11 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
 # Qualcomm support
-
 BOARD_USES_QCOM_HARDWARE := true
+
+# Init
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_millet3g.c
+TARGET_UNIFIED_DEVICE := true
 
 # Bluetooth
 
