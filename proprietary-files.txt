@@ -252,6 +252,9 @@ lib/libGLES_trace.so
 lib/libGLESv1_CM.so
 lib/libGLESv2.so
 lib/libGLESv3.so
+lib/egl/egl.cfg
+lib/hw/hwcomposer.msm8226.so
+lib/hw/gralloc.msm8226.so
 
 # Graphics firmware
 etc/firmware/a300_pfp.fw

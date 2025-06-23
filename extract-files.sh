@@ -1,5 +1,6 @@
 #!/bin/bash
-
+VENDOR = samsung
+DEVICE = millet3g
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
         OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
@@ -46,9 +47,7 @@ else
   fi
 fi
 
-#DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-#rm -rf $DEVBASE/*
-rm -rf ../../../vendor/samsung/millet3g/proprietary/*
-#extract ../../samsung/millet3g/proprietary-files.txt $DEVBASE
-extract proprietary-files.txt ../../../vendor/samsung/millet3g/proprietary
+DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
+rm -rf $DEVBASE/*
+extract proprietary-files.txt $DEVBASE
 ./setup-makefiles.sh
