@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from msm8226-common
+-include device/samsung/msm8226-common/BoardConfigCommon.mk
+
 # Platform
 
 TARGET_BOARD_PLATFORM := msm8226
@@ -41,12 +44,16 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 
 # Kernel
 #TARGET_PREBUILD_KERNEL := device/samsung/millet3g/kernel
-#BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23
-#BOARD_KERNEL_BASE := 0x00000000
-#BOARD_KERNEL_PAGESIZE := 2048
-#BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
+BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardware=qcom user_debug=23
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
+TARGET_KERNEL_SOURCE := kernel/samsung/millet3g
+TARGET_KERNEL_CONFIG := cyanogenmod_millet3g_defconfig
 #BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
-TARGET_NO_KERNEL := true
+#TARGET_NO_KERNEL := true
 
 # Partitions
 
