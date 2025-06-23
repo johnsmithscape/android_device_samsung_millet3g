@@ -1,4 +1,5 @@
 VENDOR=samsung
+DEVICE=millet3g
 OUTDIR=vendor/$VENDOR/$DEVICE
 #OUTDIR=vendor/samsung/millet3g
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk

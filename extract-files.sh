@@ -22,6 +22,7 @@ function extract() {
             fi
         else
             cp $SRC/system/$FILE $2/$DEST
+            echo "${SRC}/system/${FILE} ${2}/${DEST}"
             # if file dot not exist try destination
             if [ "$?" != "0" ]
                 then
@@ -47,7 +48,7 @@ else
   fi
 fi
 
-DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-rm -rf $DEVBASE/*
-extract proprietary-files.txt $DEVBASE
-./setup-makefiles.sh
+#DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
+rm -rf /root/cm-12.1/vendor/samsung/millet3g/proprietary/*
+extract proprietary-files.txt /root/cm-12.1/vendor/samsung/millet3g/proprietary
+#./setup-makefiles.sh
