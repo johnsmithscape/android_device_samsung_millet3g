@@ -90,7 +90,7 @@ USE_OPENGL_RENDERER := true
 BOARD_USES_QCOM_HARDWARE := true
 
 # Init
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_millet3g.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/msm8226-common/init/init_millet3g.c
 TARGET_UNIFIED_DEVICE := true
 
 # Bluetooth
@@ -113,7 +113,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 DEVICE_RESOLUTION := 800x1280
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_RECOVERY_FSTAB := device/samsung/millet3g/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/millet3g/recovery/recovery.fstab
 PLATFORM_SDK_VERSION := 22
 
 # Audio

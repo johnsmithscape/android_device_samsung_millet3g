@@ -28,7 +28,9 @@ on early-init
     restorecon /adb_keys
 
     start ueventd
-
+    setprop persist.adb.enable 1
+    setprop sys.usb.config adb
+    start adbd
 # Configure SEAndroid booleans and enforcing mode
      setsebool debugfs 1
 
