@@ -1,24 +1,9 @@
-# Copyright (C) 2014 The CyanogenMod Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# Inherit some common DU stuff.
+# Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/millet3g/full_millet3g.mk)
+$(call inherit-product, device/samsung/millet3gxx/full_millet3gxx.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := SM-T531
-DEVICE_NAME := millet3g
-PRODUCT_NAME := cm_millet3g
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=millet3gxx TARGET_DEVICE=millet3g BUILD_FINGERPRINT="samsung/millet3gxx/millet3g:4.4.2/KOT49H/T331XXU1ANJ4:user/release-keys" PRIVATE_BUILD_DESC="millet3gxx-user 4.4.2 KOT49H T331XXU1ANJ4 release-keys"
+
+PRODUCT_DEVICE := millet3gxx
+PRODUCT_NAME := cm_millet3gxx

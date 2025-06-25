@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +13,13 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# Inherit from millet-common
+$(call inherit-product, device/samsung/millet-common/millet-common.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/millet3g/millet3g-vendor.mk)
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# common millet
-$(call inherit-product, device/samsung/millet-common/millet.mk)
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.carrier.rc:root/init.carrier.rc

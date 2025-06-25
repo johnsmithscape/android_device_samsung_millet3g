@@ -2,6 +2,6 @@
 
 set -e
 
+export DEVICE=millet-common
 export VENDOR=samsung
-export DEVICE=millet3g
-./../../$VENDOR/millet-common/extract-files.sh $@
+./../$DEVICE/extract-files.sh $@
