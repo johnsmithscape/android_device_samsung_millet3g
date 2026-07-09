@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,11 +15,13 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from millet3g device
+# Inherit from milletwifi device
 $(call inherit-product, device/samsung/millet3g/device.mk)
-# Discard inherited values and use our own instead.
-PRODUCT_NAME := full_millet3gxx
+$(call inherit-product-if-exists, vendor/samsung/millet3g/millet3g-vendor.mk)
+
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := millet3g
+PRODUCT_NAME := full_millet3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-T331
+PRODUCT_MODEL := SM-T531
 PRODUCT_MANUFACTURER := samsung
