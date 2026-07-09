@@ -23,4 +23,4 @@ $(call inherit-product-if-exists, vendor/samsung/millet3g/millet3g-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # common millet
-$(call inherit-product, device/samsung/millet-common/millet.mk)
+$(call inherit-product, device/samsung/millet-common/device.mk)

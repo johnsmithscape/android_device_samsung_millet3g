@@ -23,5 +23,5 @@ $(call inherit-product-if-exists, vendor/samsung/millet3g/millet3g-vendor.mk)
 PRODUCT_DEVICE := millet3g
 PRODUCT_NAME := full_millet3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-T531
+PRODUCT_MODEL := SM-T331
 PRODUCT_MANUFACTURER := samsung

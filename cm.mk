@@ -19,6 +19,6 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/millet3g/full_millet3g.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := SM-T531
+PRODUCT_RELEASE_NAME := SM-T331
 DEVICE_NAME := millet3g
 PRODUCT_NAME := cm_millet3g

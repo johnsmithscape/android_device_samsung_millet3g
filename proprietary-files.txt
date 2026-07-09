@@ -26,7 +26,7 @@ lib/libcordon.so
 lib/libfactoryutil.so
 lib/libomission_avoidance.so
 lib/libreference-ril.so
-#lib/libril.so
+lib/libril.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so

@@ -20,7 +20,7 @@ TARGET_OTA_ASSERT_DEVICE := millet3g,millet3gxx
 DEVICE_PATH := device/samsung/millet3g
 
 # Kernel
-#TARGET_KERNEL_CONFIG := cyanogenmod_millet_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_millet3g_defconfig
 #TARGET_KERNEL_VARIANT_CONFIG := cyanogenmod_millet3g_defconfig
 TARGET_KERNEL_CONFIG := msm8226-sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig 
